@@ -17,8 +17,18 @@ Because it fits all studies simultaneously, MASC lets researchers ask questions 
 - “Does a measure’s stability peak in mid-life and drop again in old age?”  
 - “Are health-domain items intrinsically less reliable than financial-domain items?”
 
-
 Policy-makers and developmental psychologists use these answers to judge when early-life traits can (or cannot) predict later outcomes, to benchmark new instruments, and to decide how long a longitudinal panel needs to run.  In short, MASC translates scattered longitudinal evidence into a clear, three-parameter portrait of temporal stability versus change.
+
+
+## **What *this* project adds**
+
+To see when MASC’s three parameters can actually be trusted, I ran three Monte‑Carlo studies that sweep the practical knobs researchers control:  
+1. **Study 1 – Intercept only:** Vary sample size (25 → 10 000) and max retest span (1 → 20 y).  
+2. **Study 2 – Additive + interactions:** Inject age and domain moderators, scaling N up to 20 k.  
+3. **Study 3 – Model‑fit diagnostics:** Track posterior contraction to measure the real information gain.  
+
+Together these runs deliver concrete thresholds—e.g., *N* ≈ 1 k for plain data, ≥10 k & ≥10 y for age × domain models—and highlight when informative priors become mandatory.
+
 
 > **Why this matters.**
 > Our simulations show that MASC is rock-solid in simple (intercept-only) applications with as few as ~1 000 correlations, but the change and stability-of-change parameters become fragile once age × domain moderators are added—requiring datasets ≥10 k and ≥10-year spans, and still plateauing for the most complex interactions. These benchmarks give researchers a concrete sample-size rule of thumb and highlight when informative priors or alternative models are needed. In short, the work turns MASC from a promising idea into a calibrated tool with clear operating limits.
