@@ -1,9 +1,11 @@
 # MASC-simulation-studies
-Monte-Carlo simulation studies testing parameter recovery of the Meta-Analytic Stability &amp; Change (MASC) model.
+## Bayesian Monte‑Carlo tests of the Meta‑Analytic Stability & Change (MASC) model
 
-> **What’s MASC?**  A non‑linear curve that fits test–retest correlations to estimate **reliability**, **change**, and **stability‑of‑change** (Anusic & Schimmack 2016).
 
-**What MASC is for**
+### **What’s MASC?**  
+A non‑linear curve that fits test–retest correlations to estimate **reliability**, **change**, and **stability‑of‑change** (Anusic & Schimmack 2016).
+
+**What is it for?**
 
 The Meta-Analytic Stability & Change (MASC) model is a meta-analytic tool that turns a pile of test-retest correlations from many longitudinal studies into three interpretable numbers:
 
@@ -29,6 +31,12 @@ To see when MASC’s three parameters can actually be trusted, I ran three Mon
 
 Together these runs deliver concrete thresholds—e.g., *N* ≈ 1 k for plain data, ≥10 k & ≥10 y for age × domain models—and highlight when informative priors become mandatory.
 
+
+### How I judge accuracy
+
+To decide whether a simulated dataset allows the MASC model to recover the true parameters, I adopt the *corridor of stability* approach introduced by Schönbrodt & Perugini (2013).  
+An estimate is deemed **accurate** when it falls within ±0.07 (ideal), ±0.12 (moderate), or ±0.20 (lenient) of the true value in at least 95 % of 50 simulation runs.  
+For the exact implementation, see `sim/eval/C5_corridor_of_stability.R`.
 
 > **Why this matters.**
 > Our simulations show that MASC is rock-solid in simple (intercept-only) applications with as few as ~1 000 correlations, but the change and stability-of-change parameters become fragile once age × domain moderators are added—requiring datasets ≥10 k and ≥10-year spans, and still plateauing for the most complex interactions. These benchmarks give researchers a concrete sample-size rule of thumb and highlight when informative priors or alternative models are needed. In short, the work turns MASC from a promising idea into a calibrated tool with clear operating limits.
