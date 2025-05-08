@@ -2,7 +2,7 @@
 ## Bayesian Monte‑Carlo tests of the Meta‑Analytic Stability & Change (MASC) model
 
 
-### **What’s MASC?**  
+### **What’s MASC?**  
 A non‑linear curve that fits test–retest correlations to estimate **reliability**, **change**, and **stability‑of‑change** (Anusic & Schimmack 2016).
 
 **What is it for?**
@@ -25,7 +25,7 @@ Policy-makers and developmental psychologists use these answers to judge when ea
 ## **What *this* project adds**
 
 To see when MASC’s three parameters can actually be trusted, I ran three Monte‑Carlo studies that sweep the practical knobs researchers control:  
-1. **Study 1 – Intercept only:** Vary sample size (25 → 10 000) and max retest span (1 → 20 y).  
+1. **Study 1 – Intercept only:** Vary sample size (25 → 10 000) and max retest span (1 → 20 y).  
 2. **Study 2 – Additive + interactions:** Inject age and domain moderators, scaling N up to 20 k.  
 3. **Study 3 – Model‑fit diagnostics:** Track posterior contraction to measure the real information gain.  
 

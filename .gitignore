@@ -1,0 +1,13 @@
+# R / LaTeX / OS noise
+.Rhistory
+.RData
+.Rproj.user
+.DS_Store
+Thumbs.db
+*.aux
+*.log
+*.synctex.gz
+
+# Large intermediates
+output/
+tmp/
